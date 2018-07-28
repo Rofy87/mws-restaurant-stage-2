@@ -183,7 +183,7 @@ nav h1 a {
   background-color: #ccc;
 }
 
-#map-container h1{
+#map-container h2{
   position: absolute;
   top: -999px;
   left: 0;
@@ -270,7 +270,7 @@ nav h1 a {
   -moz-border-radius: 19px;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #01605a;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -373,7 +373,7 @@ nav h1 a {
   padding: 30px 40px;
   max-width: 1400px;
 }
-#reviews-container h2 {
+#reviews-container h3 {
   color: #105f0d;
   font-size: 24pt;
   font-weight: 300;

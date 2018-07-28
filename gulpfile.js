@@ -4,6 +4,7 @@ var imageResize = require('gulp-image-resize');
 var csso = require('gulp-csso');
 var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
+var inlinesource = require('gulp-inline-source');
 
 gulp.task("resizeThumb", function () {
     gulp.src("./dev/img/*.*")
@@ -23,7 +24,11 @@ gulp.task("resizeOrginal", function () {
       .pipe(gulp.dest('./css'))
   });
 
-
+  gulp.task('inline', function() {
+    return gulp.src('./dev/html/*.html')
+    .pipe(inlinesource())
+    .pipe(gulp.dest('./'));
+   });
 
   gulp.task('scripts', function() {
     return gulp.src('./dev/js/*.js')
